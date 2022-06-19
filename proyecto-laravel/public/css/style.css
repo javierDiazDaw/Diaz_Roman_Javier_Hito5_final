@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
+
+nav {
+  margin-bottom: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  text-align: center;
+  margin-top: auto;
+}
+
+
+header {
+  /*background-color: #15944e*/
+  background-color: #15944e
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.black {
+  color: black
+}
+
+.logo2 {
+  width: 50px;
+}
+
+.fondoBusqueda {
+  background-color: #91cc9b
+}
+
+.fondoBlanco {
+  background-color: #ffffff;
+}
+
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: lighter !important;
+  background-color: #5a8d58;
+}
+
+.letraPequeña {
+  font-size: small !important;
+}
+
+.letra2 {
+  font-family: 'Vollkorn', serif;
+}
+
+
+
+
+
+.nav>li>a {
+  font-size: small !important;
+}
+
+.activo2:hover {
+  background-color: #dde8d6 !important;
+  border-left: #15944e 6px solid;
+  border-right: #c6cbc2 6px solid;
+}
+
+.nav>li>a.activo {
+  background-color: #dde8d6 !important;
+  border-left: #15944e 6px solid;
+  border-right: #c6cbc2 6px solid;
+}
+
+.colorBlanco {
+  color: rgb(255, 255, 255);
+}
+
+.VerdeClaro,
+.sobreVerde {
+  color: #dde8d6
+}
+
+.izq {
+  padding-right: 25px !important;
+}
+
+.izq2 {
+  padding-right: 19px !important;
+}
+
+.circulo {
+  padding-top: 9px;
+  padding-left: 8px;
+  background: #dde8d6;
+  width: 30px;
+  height: 30px;
+}
+
+.circulo2 {
+  padding-top: 10px;
+  padding-left: 6px;
+  background: #dde8d6;
+  width: 30px;
+  height: 30px;
+}
+
+.circulo3 {
+  padding-top: 9px;
+  padding-left: 8.5px;
+  background: #dde8d6;
+  width: 30px;
+  height: 30px;
+}
+
+.margen {
+  width: 100%;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+  color: #15944e !important;
+  background-color: #ffffff !important;
+  ;
+}
+
+th {
+  color: #15944e !important;
+}
+
+.colorIcono {
+  text-decoration: none !important;
+  color: #15944e !important;
+  background-color: #fafcfa !important;
+}
+
+.textDecoration {
+  text-decoration: none !important;
+  color: #636663 !important;
+}
+
+.fondoAcordeon {
+  background-color: #fafcfa !important;
+}
+
+.punto {
+  list-style: none;
+}
+
+.hover:hover,
+.fondoVerde:hover {
+  background-color: rgb(214, 219, 223);
+}
+
+.negro {
+  color: black;
+}
+
+.bordeTabla {
+  border-bottom: #15944e 0.13rem solid !important;
+  border-right: 0px !important;
+  border-left: 0px !important;
+  height: 50px;
+  align-items: center !important;
+  color: #000000 !important;
+  border-collapse: collapse;
+}
+
+td {
+  vertical-align: middle;
+}
+
+.verde {
+  color: #15944e !important;
+}
+
+.backstyle:hover,
+.backstyle:focus,
+.sobreVerde:hover {
+  background-color: #dde8d6 !important;
+  border: #15944e solid 1px !important;
+  color: #15944e !important;
+  box-shadow: none !important;
+}
+
+.backstyle {
+  color: #15944e;
+}
+
+.bordeVerde {
+  border: #15944e solid 1px !important;
+}
+
+.fondoVerde {
+  background-color: #15944e;
+}
+
+footer {
+  height: 200px;
+}
+
+.bordeTabla {
+  border: 3px;
+}
+
+.bordeCuadrado {
+  border-radius: 0% !important;
+}
+
+button {
+  background-color: #15944e !important;
+  color: #dde8d6 !important;
+
+}
+
+.form-control:focus {
+  border-color: #15944e !important;
+}
+
+.form-check-input:checked {
+  border-color: #15944e !important;
+  background-color: #15944e !important;
+  color: #dde8d6;
+}
+
+button,
+input {
+  box-shadow: none !important;
+  border-radius: 0% !important;
+}
+
+button:hover {
+  background-color: #dde8d6 !important;
+  box-shadow: none !important;
+}
+
+.form-select:hover {
+  box-shadow: none !important;
+  border-color: #15944e !important;
+}
+
+.gris:hover {
+  background-color: rgb(203, 203, 203) !important;
+}
+
+@media (min-width:768px) {
+  .col-md-2 {
+    width: 14% !important;
+  }
+
+  .col-md-9 {
+    width: 72% !important;
+  }
+
+  .acceder:hover{ 
+     color: #000000 !important;
+  }
+
+  .a:link, a:visited, a:active{
+    text-decoration:none;
+  }
+
+  .iconoV{
+    color: green;
+  }
+
+  .iconoX{
+    color:red
+  }
+}
