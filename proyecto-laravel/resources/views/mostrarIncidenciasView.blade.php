@@ -25,19 +25,19 @@
 
 
 
-    <nav class="navbar navbar-light float-right">           
+    <nav class="navbar navbar-light float-right">
         <div class="row mb-5">
             <div class="col">
-                <input type="text" id="filtrarTitulo" onkeyup="filtrarTitulo()" class="form-control mr-sm-2"placeholder="Buscar por título" >
+                <input type="text" id="filtrarTitulo" onkeyup="filtrarTitulo()" class="form-control mr-sm-2" placeholder="Buscar por título">
             </div>
             <div class="col">
-                <input type="number" id="filtrarAula" onkeyup="filtrarAula()" class="form-control mr-sm-2"placeholder="Buscar por aula" >
+                <input type="number" id="filtrarAula" onkeyup="filtrarAula()" class="form-control mr-sm-2" placeholder="Buscar por aula">
             </div>
             <div class="col">
-                <input type="text" id="filtrarEstado" onkeyup="filtrarEstado()" class="form-control mr-sm-2"placeholder="Buscar por estado" >
-            </div>               
-        </div>        
-    </nav>       
+                <input type="text" id="filtrarEstado" onkeyup="filtrarEstado()" class="form-control mr-sm-2" placeholder="Buscar por estado">
+            </div>
+        </div>
+    </nav>
 
     <table id="tabla" class="table table-striped table-sm black">
         <thead class="verde">
@@ -50,8 +50,10 @@
                 <th>FECHA CIERRE</th>
                 <th>ESTADO</th>
                 <th>COMENTARIOS</th>
+                @if(\Session::get('usuario')['rol']=='administrador')
                 <th>EDITAR</th>
                 <th>ELIMINAR</th>
+                @endif
             </tr>
             <thead class="verde">
                 <?php foreach ($incidencias as $incidencia) : ?>
@@ -67,7 +69,7 @@
                         @if(\Session::get('usuario')['rol']=='administrador')
                         <td><?php echo "<a href=/incidencias/editar/$incidencia[idIncidencia]>Editar</a>" ?></td>
                         <td><?php echo "<a href=/incidencias/borrar/$incidencia[idIncidencia]>Borrar</a>" ?></td>
-                        @endif      
+                        @endif
                     </tr>
                 <?php endforeach; ?>
     </table>
