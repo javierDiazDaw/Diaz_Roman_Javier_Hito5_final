@@ -64,8 +64,10 @@
                         <td><?php echo $incidencia['fechaCierre'] ?></td>
                         <td><?php echo $incidencia['estado'] ?></td>
                         <td><?php echo "<a href=/incidencias/comentarios/ver/$incidencia[idIncidencia]>Comentarios</a>" ?></td>
+                        @if(\Session::get('usuario')['rol']=='administrador')
                         <td><?php echo "<a href=/incidencias/editar/$incidencia[idIncidencia]>Editar</a>" ?></td>
                         <td><?php echo "<a href=/incidencias/borrar/$incidencia[idIncidencia]>Borrar</a>" ?></td>
+                        @endif      
                     </tr>
                 <?php endforeach; ?>
     </table>

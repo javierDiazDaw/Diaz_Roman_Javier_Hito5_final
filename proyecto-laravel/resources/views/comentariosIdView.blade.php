@@ -27,14 +27,18 @@
             <tr>
                 <th>COMENTARIO</th>
                 <th>FECHA</th>
+                @if(\Session::get('usuario')['rol']=='administrador')
                 <th>BORRAR</th>
+               @endif
             </tr>
             <thead class="verde">
             @foreach ($comentario as $comentar)
             <tr class="bordeTabla">
                 <td>{{$comentar->comentario}}</td>
                 <td>{{$comentar->fechaComentario}}</td>
+                @if(\Session::get('usuario')['rol']=='administrador')
                 <td><a href="/comentarios/borrar/{{$comentar->idComentario}}">Borrar comentario</a></td>
+                @endif
             </tr>
             @endforeach
     </table>

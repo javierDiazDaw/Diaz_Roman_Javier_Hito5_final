@@ -11,9 +11,7 @@
             <th>FECHA MODIFICACIÓN</th>
             <th>FECHA CIERRE</th>
             <th>ESTADO</th>
-            <th>COMENTARIOS</th>
             <th>EDITAR</th>
-            <th>ELIMINAR</th>
         </tr>
         <thead class="verde">
             @foreach ($incidencia as $inci)
@@ -25,6 +23,8 @@
                 <td>{{$inci->fechaModificacion}}</td>
                 <td>{{$inci->fechaCierre}}</td>
                 <td>{{$inci->estado}}</td>
+                <td><a href=/incidencias/editar/{{$inci->idIncidencia}}>Editar</a></td>
+
             </tr>
             @endforeach
 </table>

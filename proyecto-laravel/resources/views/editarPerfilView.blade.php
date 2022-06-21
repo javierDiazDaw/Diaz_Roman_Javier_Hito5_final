@@ -78,10 +78,10 @@
             <div class="col-6 col-md-1 ms-4">
                 <button type="reset" class="btn acceder">Resetear</button>
             </div>
-            <div class="col-6 col-md-2 ms-4">
-                <x-button class="ml-3 acceder" type="submit">
-                    <a class="sub acceder text-light" href="/incidencias/{{\Session::get('usuario')['IdUsuario']}}">Ver incidencias</a>
-                </x-button>  
+            <div class="col-6 col-md-3 ms-4">
+                 <a class=" btn btn-warning acceder" style="border-radius: 0;" href="/incidencias/{{$usuario->IdUsuario}}">
+                        Ver incidencias 
+                </a>
             </div>
         </div>
     </form>
